@@ -28,7 +28,7 @@ Page for showcasing the Capstone project at STEM Gharbiya School, including an i
 
 ## 🔗 Live Demo
 
-[View the live site here](https://ahmedtamerali.github.io/school-capstone-project/)
+[View the live site here][(https://ahmedtamerali.github.io/school-capstone-project/)]
 
 
 ## 👤 Author
