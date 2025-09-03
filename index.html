@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="hero-style.css">
     <link rel="stylesheet" href="intro-style.css">
+    <link rel="stylesheet" href="edp-timeline.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
@@ -13,6 +14,7 @@
     <title>GH Capstone hub</title>
 </head>
 <body>
+
     <section class="hero">
         <div>
             <h1>Welcome to STEM GH Capstone Hub</h1>
@@ -21,6 +23,7 @@
         </div>
         <div class="animating-circles"></div>
     </section>
+
     <section class="TOC">
         <div class="divider"></div>
         <ul>
@@ -32,6 +35,7 @@
         </ul>
         <div class="divider"></div>
     </section>
+
     <section id="what-is-capstone" class="card">
         <div class="intro-text">
             <h2><span> 01.</span> What is the Capstone Project?</h2>
@@ -45,18 +49,74 @@
         </div>
         <div class="intro-img"></div>
     </section>
+
     <div class="divider b"></div>
-    <section id="EDP-timeline" class="card">
-        <div class="intro-text">
-            <h2>What is the <span>Capstone Project?</span></h2>
-            <p>Capstone is a special subject at STEM schools where students work on real challenges instead of just studying from books. Each team follows the Engineering Design Process (EDP) to find a problem, research solutions, design, and build a prototype. At the end of the term, every team submits four main deliverables:</p>
-            <ul>
-              <li>Portfolio</li>
-              <li>Poster</li>
-              <li>Prototype</li>
-              <li>Journal</li>
-            </ul>
+
+    <section id="EDP-timeline">
+        <div class="edp-heading">
+            <h2><span> 02.</span> EDP Timeline</h2>
+            <p>The Engineering Design Process (EDP) is a series of steps that guide teams in developing their projects. Here's a typical timeline for a Capstone project:</p>
         </div>
+        <div class="timeline-middle"></div>
+<!-- edp steps -->
+        <ol>
+            <li class="right">
+    Identify the Problem<br>
+    Pinpoint what needs solving and why it matters<br>
+    <span>Example: "We must design a low-cost system that produces at least 40 joules of renewable energy using a solar chimney and vertical wind turbine"</span>
+  </li>
+  <li class="left">
+    Research and Gather Information<br>
+    Collect scientific principles, prior solutions, and available resources<br>
+    <span>Example: study chimney airflow mechanics, turbine efficiency, energy conversion, Arduino-based measurement, and material prices in Egypt</span>
+  </li>
+  <li class="right">
+    Define Requirements and Constraints<br>
+    Set measurable goals and list all limits<br>
+    <span>Example: output ≥40 joules, budget ≤1500 EGP, 6-week timeline, portable size, safe to use in school, includes Arduino monitoring system</span>
+  </li>
+  <li class="left">
+    Brainstorm and Ideate<br>
+    Generate multiple possible designs without judgment<br>
+    <span>Example: test different turbine blade shapes, vary chimney height, add black paint for heat absorption, consider using an external fan to increase airflow</span>
+  </li>
+  <li class="right">
+    Select the Best Solution<br>
+    Compare ideas against criteria, then justify choice<br>
+    <span>Example: select Savonius turbine with DC motor (easy to build, reliable torque), PEV pipe chimney (cheap and light), concrete absorber base for heat storage, Arduino sensors for display</span>
+  </li>
+  <li class="left">
+    Develop and Design the Prototype<br>
+    Turn idea into detailed sketches, diagrams, and plans<br>
+    <span>Example: draw base dimensions (70x70 cm), chimney radius (35 cm), turbine placement, wiring diagram (motor → diode bridge → battery → Arduino + LCD)</span>
+  </li>
+  <li class="right">
+    Build the Prototype<br>
+    Assemble the first working model using available materials<br>
+    <span>Example: cut wood base, cast concrete absorber, mount chimney pipe, build curved plastic turbine blades, connect motor and Arduino system</span>
+  </li>
+  <li class="left">
+    Test and Evaluate<br>
+    Measure actual performance and compare with targets<br>
+    <span>Example: place prototype under sun, record airflow speed, measure motor voltage and current, calculate joules produced (E = V × I × t), check stability of turbine</span>
+  </li>
+  <li class="right">
+    Improve and Redesign<br>
+    Fix weaknesses and refine design through iterations<br>
+    <span>Example: seal chimney gaps to prevent leaks, adjust blade curvature for higher spin, add insulation around absorber, increase chimney height if needed</span>
+  </li>
+  <li class="left">
+    Finalize Solution<br>
+    Produce the optimized working model with reliable performance<br>
+    <span>Example: stabilize frame, tidy wiring, make LCD data readable, ensure prototype consistently meets ≥40 joules requirement</span>
+  </li>
+  <li class="right">
+    Communicate and Present<br>
+    Share the entire process, results, and impact<br>
+    <span>Example: prepare poster with diagrams, energy data, and before/after improvements, demonstrate live Arduino readings, explain renewable energy potential for schools</span>
+  </li>
+        </ol>
     </section>
+
 </body>
 </html>
