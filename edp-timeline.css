@@ -1,0 +1,95 @@
+:root{
+    --black: #050A0B;
+    --eerie-black: #151C1E;
+    --charcoal: #374C52;
+    --gunmetal: #21363B;
+    --slate-gray: #66777E;
+    --indigo-dye: #1E4F6F;
+    --white: #FFFFFF;
+    --cadet-gray: #939CA0;
+}
+
+#edp-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.edp-heading{
+    margin: 2rem auto;
+    width: 40%;
+    background: linear-gradient(-135deg, #1133495e, #4687b35e);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1.5px solid #939ca07a;
+    box-shadow: 0 0 10px #ffffff25;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    transform: translateY(0);
+}
+
+.edp-heading h2{
+    font-family: 'Story Script', 'Segoe UI', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    color: var(--white);
+    text-shadow: 0 0 10px #00000055;
+    letter-spacing: 0.2rem;
+}
+
+.edp-heading h2 span{
+    font-family: 'Asimovian', 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    margin-right: 0.1rem;
+    display: inline-block;
+}
+
+.edp-heading p{
+    font-family: 'Chiron GoRound TC', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    color: #cbc7c7;
+}
+
+#EDP-timeline ol {
+    width: 100%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#EDP-timeline ol li {
+    padding: 1rem;
+    width: 70%;
+    color: var(--white);
+    position: relative;
+    transition: all 0.5s ease;
+    list-style: none;
+    border: #00000055 2px solid;
+}
+
+.right{
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(135deg, var(--charcoal) 0%, var(--gunmetal) 100%);
+    transform: translateX(-20px);
+}
+
+.left{
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(135deg, var(--gunmetal) 0%, var(--charcoal) 100%);
+    transform: translateX(20px);
+}
+
