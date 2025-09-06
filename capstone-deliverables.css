@@ -1,0 +1,138 @@
+.deliverables-heading{
+    margin: 2rem auto;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px #ffffff25;
+    transform: translateY(50px) scale(0.8);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.deliverables-heading h2{
+    font-family: 'Story Script', 'Segoe UI', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    color: var(--white);
+    text-shadow: 0 0 10px #00000055;
+    letter-spacing: 0.2rem;
+}
+
+.deliverables-heading h2 span{
+    font-family: 'Asimovian', 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    margin-right: 0.1rem;
+    display: inline-block;
+}
+
+.deliverables-heading p{
+    font-family: 'Chiron GoRound TC', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    color: #cbc7c7;
+}
+
+#capstone-deliverables > ul {
+    margin: 2rem auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#capstone-deliverables > ul > li {
+    background: linear-gradient(45deg, #233291 0%, rgb(54, 66, 139) 100%);
+    border: 1.5px solid #939ca07a;
+    box-shadow: 0 0 10px #ffffff25;
+    width: 20rem;
+    height: 21rem;
+    margin: 1rem;
+    border-radius: 20px;
+    text-align: left;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    transform: translate(-100px,100px);
+    opacity: 0;
+}
+
+#capstone-deliverables ul li h3 {
+    font-family: 'Mogra', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #e0dcdc;
+    text-shadow: 0 0 10px #00000055;
+}
+
+#capstone-deliverables > ul > li:hover{
+    transform: translateY(-5px) !important;
+    box-shadow: 0 0 20px #ffffff75;
+}
+
+#capstone-deliverables > ul > li p {
+    font-family: 'Chiron GoRound TC', 'Segoe UI', Arial, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    line-height: 1.3rem;
+}
+
+#capstone-deliverables > ul > li p .sum {
+    font-style: italic;
+    color: #b0abab;
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+#capstone-deliverables > ul > li > ul {
+    margin-top: 0.5rem;
+    margin-left: 1.2rem;
+    color: #b0abab;
+    font-family: 'Chiron GoRound TC', 'Segoe UI', Arial, sans-serif;
+    font-size: 1rem;
+    list-style: disc;
+    line-height: 1.2rem;
+    font-style: italic;
+}
+
+#capstone-deliverables > ul > li > button {
+    position: absolute;
+    left: 1rem;
+    width: 90%;
+    margin: 1rem auto 0 auto;
+    padding: 0.7rem;;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    height: 3rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#capstone-deliverables .download-btn{
+    background: linear-gradient(45deg, #1E4F6F 0%, #28658d 100%);
+    color: var(--white);
+    bottom: 1rem;
+    border: 1.5px solid #939ca07a;
+}
+
+#capstone-deliverables .download-btn:hover{
+    background: linear-gradient(-45deg, #305b75 0%, #254278 100%);
+    box-shadow: 4px 4px 15px rgba(30,79,111,.7);
+}
+
+#capstone-deliverables .learn-more{
+    background: linear-gradient(135deg, #e7e2e2 0%, #dfd6d6 100%);
+    color: var(--black);
+    bottom: 5rem;
+    border: 1.5px solid #000000ae;
+}
+
+#capstone-deliverables .learn-more:hover{
+    background: linear-gradient(-135deg, #dfdada 0%, #d6d2d2 100%);
+    box-shadow: 0 0 15px rgba(171, 167, 167, 0.4);
+}
