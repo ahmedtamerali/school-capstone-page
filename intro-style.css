@@ -1,28 +1,4 @@
-:root{
-    --black: #050A0B;
-    --eerie-black: #151C1E;
-    --charcoal: #374C52;
-    --gunmetal: #21363B;
-    --slate-gray: #66777E;
-    --indigo-dye: #1E4F6F;
-    --white: #FFFFFF;
-    --cadet-gray: #939CA0;
-}
-
-.divider {
-    height: 2px;
-    background: var(--cadet-gray);
-    margin: 3rem auto;
-    width: 80vw;
-    border-radius: 2px;
-}
-
-/*divider animation */
-.b{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-}
+/* Intro Section */
 
 .TOC {
     opacity: 0;
@@ -31,13 +7,33 @@
 }
 
 .TOC ul {
-    margin: auto;
+    margin: 3rem auto;
     width: 80vw;
-    padding: 2rem 0;
+    padding: 5rem 0;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+/*ul surrounding lines*/
+.TOC ul::after, .TOC ul::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: var(--cadet-gray);
+    width: 80vw;
+    border-radius: 100px;
+}
+
+.TOC ul::before {
+    top: 0;
+    left: 0;
+}
+
+.TOC ul::after {
+    bottom: 0;
+    left: 0;
 }
 
 .TOC li{
@@ -76,30 +72,6 @@
     vertical-align: middle;
 }
 
-.card {
-  width: 80vw;
-  margin: 6rem auto;
-  padding: 4rem 3rem;
-  border-radius: 50px 0 50px 0;
-  background: linear-gradient(135deg, #1133495e, #4687b35e);
-  position: relative;
-  overflow: hidden;
-  border: 1.5px solid #939ca07a;
-  box-shadow: 0 0 10px #ffffff25;
-
-  /* transition from your original code */
-  opacity: 0;
-  transform: translateX(-200px);
-  transition: all 0.5s ease 0.2s;
-}
-
-/*reveal elements animation when scrolled*/
-.show{
-    opacity: 1;
-    transform: translateX(0);
-    transform: translateY(0);
-}
-
 #what-is-capstone {
     padding: 0;
     display: flex;
@@ -121,7 +93,7 @@
 
 .intro-text{
     flex:1;
-    height: 50vh;
+    height: 31rem;
     padding: 1.5rem;
     font-family: 'Poppins', Helvetica, sans-serif;
     font-weight: 400;
