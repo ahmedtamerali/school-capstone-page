@@ -88,7 +88,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #1133495e, transparent 50%);
+  background: linear-gradient(to right, #21363b51, transparent 50%);
 }
 
 .intro-text{
@@ -117,6 +117,7 @@
     display: inline-block;
 }
 
+/*border-bottom*/
 .intro-text h2::after{
     content: "";
     display: block;
