@@ -10,7 +10,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
 });
 
 
-document.querySelectorAll('.card, .TOC, .edp-heading, #EDP-timeline ol li, .deliverables-heading, #capstone-deliverables > ul > li').forEach(el => {
+document.querySelectorAll('.card, .TOC, .edp-heading, #EDP-timeline ol li, .deliverables-heading, #capstone-deliverables > ul > li, .gallery-heading, .slider, .gallery .btn, .faq-heading').forEach(el => {
   sectionObserver.observe(el);
 });
 
@@ -29,5 +29,4 @@ const dividerObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.divider').forEach(el => {
   dividerObserver.observe(el);
 });
-
 
