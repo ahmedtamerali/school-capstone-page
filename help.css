@@ -1,0 +1,84 @@
+.faq-heading{
+    margin: 2rem auto;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 8px;
+    height: 8rem;
+    text-align: center;
+    border: 1.5px solid #939ca07a;
+    box-shadow: 0 0 10px #ffffff25;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.faq-heading h2{
+    font-family: 'Story Script', 'Segoe UI', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    color: var(--white);
+    text-shadow: 0 0 10px #00000055;
+    letter-spacing: 0.2rem;
+}
+
+.faq-heading h2 span{
+    font-family: 'Asimovian', 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    margin-right: 0.1rem;
+    display: inline-block;
+}
+
+.faq-heading p{
+    font-family: 'Chiron GoRound TC', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    color: #cbc7c7;
+}
+
+.faq-help-input textarea {
+    width: 80%;
+    height: 20rem; 
+    display: block;
+    margin: 0 auto;
+    padding: 20px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    outline: none;
+    transition: all ease 0.3s;
+    box-sizing: border-box;
+    resize: vertical; 
+}
+
+.faq-help-input textarea:focus {
+    border-color: #3a478f;
+    box-shadow: 0 0 30px rgba(94, 128, 163, 0.53);
+}
+
+.faq-help-input textarea::placeholder {
+    color: #999;
+}
+
+.faq .help-btn{
+    width: 80%;
+    display: block;
+    margin: 1rem auto 0 auto ;
+    padding: 0.7rem;;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    height: 3.2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: linear-gradient(45deg, #1E4F6F 0%, #28658d 100%);
+    color: var(--white);
+    bottom: 1rem;
+    border: 1.5px solid #939ca07a;
+}
+
+.faq .help-btn:hover{
+    background: linear-gradient(-45deg, #305b75 0%, #254278 100%);
+    box-shadow: 4px 4px 15px rgba(30,79,111,.7);
+}
