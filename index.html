@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="intro-style.css">
     <link rel="stylesheet" href="edp-timeline.css">
     <link rel="stylesheet" href="capstone-deliverables.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="help.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=WDXL+Lubrifont+TC&family=Mogra&family=Knewave&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Story+Script&family=Chiron+GoRound+TC:wght@200..900&family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Story+Script&family=Chiron+GoRound+TC:wght@200..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="app.js" defer></script>
+    <script src="gallery.js" defer></script>
     <title>GH Capstone hub</title>
 </head>
 <body>
@@ -31,12 +34,12 @@
             <li><a href="#what-is-capstone"><span>01.</span> What is Capstone?</a></li>
             <li><a href="#EDP-timeline"><span>02.</span> EDP Timeline</a></li>
             <li><a href="#capstone-deliverables"><span>03.</span> Capstone Deliverables</a></li>
-            <li><a href="#the-prototype"><span>04.</span> Gallery</a></li>
-            <li><a href="#the-journal"><span>05.</span> FAQs & help</a></li>
+            <li><a href="#Gallery"><span>04.</span> Gallery</a></li>
+            <li><a href="#FAQ"><span>05.</span> FAQs & help</a></li>
         </ul>
     </section>
 
-    <section id="what-is-capstone" class="card">
+    <section id="what-is-capstone" class="card"> <!-- .card styled in global.css -->
         <div class="intro-text">
             <h2><span> 01.</span> What is the Capstone Project?</h2>
             <p>Capstone is a special subject at STEM schools where students work on real challenges instead of just studying from books. Each team follows the Engineering Design Process (EDP) to find a problem, research solutions, design, and build a prototype. At the end of the term, every team submits four main deliverables:</p>
@@ -169,5 +172,89 @@
 
     <div class="divider"></div>
     
+    <section id="Gallery" class="gallery">
+      <div class="gallery-heading">
+        <h2><span> 04.</span> Our Gallery</h2>
+        <p>The Capstone Gallery celebrates creativity and teamwork, showcasing how bold ideas grow into inspiring prototypes, posters, and solutions that bring change.</p>
+      </div>
+
+      <button class="btn prev" id="btn-left">‹</button>
+      <button class="btn next" id="btn-right">›</button>
+
+      <ul class="slider">
+        <li>
+          <h3 class="team">Team A</h3>
+          <h4 class="project-title">Project Title</h4>
+          <p class="year">G10 Semester1 <span class="date">2025</span></p>
+          <p class="grade">Grade: A+</p>
+          <p class="contributers">Ahmed, Mohamed, Ali, Mostafa, Mahmoud</p>
+          <button class="more-info">More Info</button>
+        </li>
+
+        <li>
+          <h3 class="team">Team B</h3>
+          <h4 class="project-title">Smart Irrigation System</h4>
+          <p class="year">G11 Semester 2 <span class="date">2024</span></p>
+          <p class="grade">Grade: A</p>
+          <p class="contributers">Sara, Nour, Omar, Youssef, Hana</p>
+          <button class="more-info">More Info</button>
+        </li>
+
+        <li>
+          <h3 class="team">Team C</h3>
+          <h4 class="project-title">Waste-to-Energy Converter</h4>
+          <p class="year">G10 Semester 1 <span class="date">2023</span></p>
+          <p class="grade">Grade: B+</p>
+          <p class="contributers">Laila, Karim, Yara, Hossam, Rawan</p>
+          <button class="more-info">More Info</button>
+        </li>
+
+        <li>
+          <h3 class="team">Team D</h3>
+          <h4 class="project-title">Portable Water Desalination</h4>
+          <p class="year">G12 Semester 1 <span class="date">2025</span></p>
+          <p class="grade">Grade: A</p>
+          <p class="contributers">Mostafa, Farah, Adel, Mariam</p>
+          <button class="more-info">More Info</button>
+        </li>
+
+        <li>
+          <h3 class="team">Team E</h3>
+          <h4 class="project-title">Solar-Powered Air Cooler</h4>
+          <p class="year">G11 Semester 1 <span class="date">2024</span></p>
+          <p class="grade">Grade: A-</p>
+          <p class="contributers">Ola, Malak, Tarek, Salma, Ziad</p>
+          <button class="more-info">More Info</button>
+        </li>
+
+        <li>
+          <h3 class="team">Team F</h3>
+          <h4 class="project-title">Smart Traffic Management</h4>
+          <p class="year">G10 Semester 2 <span class="date">2023</span></p>
+          <p class="grade">B</p>
+          <p class="contributers">Hadi, Jana, Fares, Dina, Rami</p>
+          <button class="more-info">More Info</button>
+        </li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="faq" id="FAQ">
+        <div class="faq-heading">
+          <h2><span> 05.</span> FAQ & Help</h2>
+          <p>Have questions? Ask here and our team will get back to you quickly.</p>
+        </div>
+
+        <!-- Help input -->
+        <div class="faq-help-input">
+          <textarea placeholder="Type your question here..."></textarea>
+        </div>
+
+        <button class="help-btn" onclick="send_question()">Send Question</button>
+    </section>
+
+    <div class="divider"></div>
+
 </body>
 </html>
