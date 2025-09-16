@@ -136,3 +136,17 @@
     background: linear-gradient(-135deg, #dfdada 0%, #d6d2d2 100%);
     box-shadow: 0 0 15px rgba(171, 167, 167, 0.4);
 }
+
+@media screen and (max-width: 992px) {
+    #capstone-deliverables > ul > li { width: 45%; margin: 1rem; }
+}
+
+@media screen and (max-width: 768px) {
+    #capstone-deliverables > ul > li { width: 90%; margin: 0.5rem auto; }
+}
+
+@media screen and (max-width: 480px) {
+    #capstone-deliverables > ul > li h3 { font-size: 1.2rem; }
+    #capstone-deliverables > ul > li p { font-size: 0.9rem; }
+    #capstone-deliverables > ul > li > button { font-size: 1rem; }
+}

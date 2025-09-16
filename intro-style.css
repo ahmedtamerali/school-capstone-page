@@ -1,5 +1,3 @@
-/* Intro Section */
-
 .TOC {
     opacity: 0;
     transform: translateX(200px);
@@ -9,38 +7,31 @@
 .TOC ul {
     margin: 3rem auto;
     width: 80vw;
+    max-width: 1200px;
     padding: 5rem 0;
     position: relative;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
-/*ul surrounding lines*/
-.TOC ul::after, .TOC ul::before {
+
+.TOC ul::before,
+.TOC ul::after {
     content: '';
     position: absolute;
     height: 2px;
-    background: var(--cadet-gray);
     width: 80vw;
+    max-width: 1200px;
     border-radius: 100px;
+    background: var(--cadet-gray);
 }
 
-.TOC ul::before {
-    top: 0;
-    left: 0;
-}
+.TOC ul::before { top: 0; left: 0; }
+.TOC ul::after { bottom: 0; left: 0; }
 
-.TOC ul::after {
-    bottom: 0;
-    left: 0;
-}
+.TOC li { list-style: none; }
 
-.TOC li{
-    list-style: none;
-}
-
-.TOC li a{
+.TOC li a {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Knewave', 'Segoe UI', Arial, sans-serif;
@@ -50,7 +41,6 @@
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
     text-shadow: 0 0 5px #00000055;
@@ -67,96 +57,201 @@
     font-size: 2.2rem;
     color: #c2c2c2;
     letter-spacing: 0.05em;
-    margin-right: 0.5rem;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 #what-is-capstone {
-    padding: 0;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
 }
 
-.intro-img{
-    flex:1;
-    background: url('https://blocks.astratic.com/img/general-img-portrait.png') no-repeat center center/cover;
-    position: relative;
-}
-
-.intro-img::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, #21363b51, transparent 50%);
-}
-
-.intro-text{
-    flex:1;
-    height: 31rem;
-    padding: 1.5rem;
+.intro-text {
+    flex: 1;
     font-family: 'Poppins', Helvetica, sans-serif;
-    font-weight: 400;
 }
 
-.intro-text h2{
+.intro-text h2 {
     font-family: 'Story Script', 'Segoe UI', Arial, sans-serif;
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
     color: var(--white);
     text-shadow: 0 0 10px #00000055;
-    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05rem;
 }
 
-.intro-text h2 span{
+.intro-text h2 span {
     font-family: 'Asimovian', 'Segoe UI', Arial, sans-serif;
     font-weight: 400;
     font-size: 2.5rem;
-    letter-spacing: 0.05em;
     margin-right: 0.2rem;
-    display: inline-block;
 }
 
-/*border-bottom*/
-.intro-text h2::after{
+.intro-text h2::after {
     content: "";
     display: block;
-    width: 33rem;
+    width: 100%;
+    max-width: 500px;
     height: 3px;
     background: var(--cadet-gray);
     margin-top: 0.5rem;
-    margin-left: 0.1rem;
     border-radius: 2px;
 }
 
-.intro-text p, .intro-text ul {
-    width: 36rem;
+.intro-text p, 
+.intro-text ul {
     font-family: 'Chiron GoRound TC', 'Segoe UI', Arial, sans-serif;
     font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
     color: #e3dddd;
+    width: 100%;
 }
 
 .intro-text ul {
     list-style-position: inside;
     padding-left: 1rem;
-    padding-top: .5rem;
-    color: #e2dcdc;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.intro-text ul li{
+.intro-text ul li {
     font-family: 'WDXL Lubrifont TC', sans-serif;
     font-weight: 900;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .intro-text ul li a {
     text-decoration: none;
     color: #e2dcdc;
     transition: color 0.3s ease;
+    font-size: 1.25rem;
 }
 
 .intro-text ul li a:hover {
     color: #ffffff;
+}
+
+.intro-img {
+    flex: 1;
+    min-height: 300px;
+    background: url('https://blocks.astratic.com/img/general-img-portrait.png') no-repeat center/cover;
+    position: relative;
+}
+
+.intro-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #21363b51, transparent 50%);
+}
+
+.timeline {
+    width: 90%;
+    max-width: 1100px;
+    margin: 3rem auto;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--cadet-gray);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+    padding: 1.5rem 2rem;
+    border: 2px solid #c2c2c2;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    background: #143e59;
+    transform: translateY(-2px);
+    border-color: #ffffff;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #28658d;
+    border: 2px solid #ffffff;
+}
+
+.timeline-item h3 {
+    font-family: 'Story Script', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+}
+
+.timeline-item p {
+    font-family: 'Chiron GoRound TC', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #cbc7c7;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    #what-is-capstone {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .intro-text h2 { font-size: 2rem; }
+    .intro-text p, .intro-text ul li { font-size: 1.1rem; }
+    .intro-text h2::after { width: 90%; }
+    .timeline { padding-left: 1rem; }
+    .timeline-item { padding-left: 2.5rem; }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-text h2 { font-size: 1.8rem; }
+    .intro-text p, .intro-text ul li { font-size: 1rem; }
+    .intro-img { width: 100%; min-height: 250px; margin-top: 1rem; }
+    .timeline-item h3 { font-size: 1.5rem; }
+    .timeline-item p { font-size: 1rem; }
+
+    .TOC ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .TOC li:not(:last-child)::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: var(--cadet-gray);
+        margin: 0.5rem auto 0 auto;
+        border-radius: 2px;
+    }
+
+    .TOC li a { font-size: 1.5rem; }
+}
+
+@media screen and (max-width: 480px) {
+    .intro-text h2 { font-size: 1.5rem; }
+    .intro-text p, .intro-text ul li { font-size: 0.95rem; line-height: 1.4rem; }
+    .intro-text ul li a { font-size: 1.15rem; }
+    .intro-img { min-height: 200px; }
+    .timeline-item h3 { font-size: 1.3rem; }
+    .timeline-item p { font-size: 0.9rem; }
 }

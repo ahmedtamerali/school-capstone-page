@@ -83,3 +83,41 @@ body > *{
     opacity: 1 !important;
     width: 80vw !important;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .divider { width: 20vw; }
+    .card { width: 90vw; padding: 3rem 2rem; }
+    body > * { padding: 0 1rem; }
+}
+
+@media screen and (max-width: 992px) {
+    .card { padding: 2.5rem 1.5rem; }
+    #capstone-deliverables > ul { justify-content: center; }
+    #capstone-deliverables > ul > li { width: 18rem; height: auto; margin: 1rem; }
+    #EDP-timeline ol li { width: 90%; padding-left: 2rem; padding-right: 2rem; }
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1.1rem; }
+    .TOC ul { flex-direction: column; gap: 2rem; padding: 3rem 0; }
+    .TOC ul::before, .TOC ul::after { width: 90%; }
+    #what-is-capstone { flex-direction: column; }
+    .intro-text, .intro-img { width: 100%; height: auto; }
+    .intro-text h2 { font-size: 2rem; }
+    .intro-text p, .intro-text ul { width: 100%; font-size: 1.2rem; }
+    #EDP-timeline ol li.right, #EDP-timeline ol li.left { padding-left: 1rem !important; padding-right: 1rem !important; }
+    .timeline-middle { left: 2%; transform: translateX(0); width: 4px; }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 { font-size: 1.8rem; }
+    .hero p { font-size: 1rem; }
+    .hero button { padding: 0.6rem 1.5rem; font-size: 1rem; }
+    .intro-text h2 { font-size: 1.5rem; }
+    .intro-text p, .intro-text ul li { font-size: 1rem; }
+    #capstone-deliverables > ul > li { width: 90%; height: auto; margin: 0.5rem 0; }
+    #EDP-timeline ol li i { display: none; }
+    .gallery .slider li { width: 90%; min-width: 90%; }
+}

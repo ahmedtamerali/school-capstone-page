@@ -1,9 +1,9 @@
-.faq-heading{
+.faq-heading {
     margin: 2rem auto;
     width: 70%;
+    max-width: 1000px;
     padding: 1rem;
     border-radius: 8px;
-    height: 8rem;
     text-align: center;
     border: 1.5px solid #939ca07a;
     box-shadow: 0 0 10px #ffffff25;
@@ -12,16 +12,16 @@
     transition: all 0.5s ease;
 }
 
-.faq-heading h2{
+.faq-heading h2 {
     font-family: 'Story Script', 'Segoe UI', Arial, sans-serif;
     font-size: 2.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     color: var(--white);
     text-shadow: 0 0 10px #00000055;
     letter-spacing: 0.2rem;
 }
 
-.faq-heading h2 span{
+.faq-heading h2 span {
     font-family: 'Asimovian', 'Segoe UI', Arial, sans-serif;
     font-weight: 400;
     font-size: 2.5rem;
@@ -30,7 +30,7 @@
     display: inline-block;
 }
 
-.faq-heading p{
+.faq-heading p {
     font-family: 'Chiron GoRound TC', 'Segoe UI', Arial, sans-serif;
     font-size: 1.3rem;
     line-height: 1.25;
@@ -39,15 +39,16 @@
 
 .faq-help-input textarea {
     width: 80%;
+    max-width: 900px;
     height: 20rem; 
     display: block;
-    margin: 0 auto;
-    padding: 20px 15px;
-    font-size: 16px;
+    margin: 1rem auto;
+    padding: 1.2rem;
+    font-size: 1rem;
     border-radius: 8px;
     border: 2px solid #ddd;
     outline: none;
-    transition: all ease 0.3s;
+    transition: all 0.3s ease;
     box-sizing: border-box;
     resize: vertical; 
 }
@@ -61,24 +62,43 @@
     color: #999;
 }
 
-.faq .help-btn{
+.faq .help-btn {
     width: 80%;
+    max-width: 400px;
     display: block;
-    margin: 1rem auto 0 auto ;
-    padding: 0.7rem;;
+    margin: 1rem auto;
+    padding: 0.7rem 0;
     border-radius: 5px;
-    border: none;
-    transition: all 0.3s ease;
-    height: 3.2rem;
+    border: 1.5px solid #939ca07a;
     font-size: 1.3rem;
     cursor: pointer;
     background: linear-gradient(45deg, #1E4F6F 0%, #28658d 100%);
     color: var(--white);
-    bottom: 1rem;
-    border: 1.5px solid #939ca07a;
+    transition: all 0.3s ease;
 }
 
-.faq .help-btn:hover{
+.faq .help-btn:hover {
     background: linear-gradient(-45deg, #305b75 0%, #254278 100%);
-    box-shadow: 4px 4px 15px rgba(30,79,111,.7);
+    box-shadow: 4px 4px 15px rgba(30,79,111,0.7);
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .faq-heading { width: 85%; }
+}
+
+@media screen and (max-width: 768px) {
+    .faq-heading { width: 90%; }
+    .faq-heading h2 { font-size: 2rem; }
+    .faq-heading p { font-size: 1.1rem; }
+    .faq-help-input textarea { width: 90%; height: 18rem; font-size: 0.95rem; }
+    .faq .help-btn { width: 90%; font-size: 1.1rem; }
+}
+
+@media screen and (max-width: 480px) {
+    .faq-heading { width: 95%; }
+    .faq-heading h2 { font-size: 1.6rem; }
+    .faq-heading p { font-size: 0.95rem; }
+    .faq-help-input textarea { width: 95%; height: 16rem; font-size: 0.9rem; padding: 0.8rem; }
+    .faq .help-btn { width: 95%; font-size: 0.9rem; padding: 0.5rem; }
 }
