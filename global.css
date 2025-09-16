@@ -20,6 +20,7 @@ html{
     padding: 0;
 }
 body{
+    width: 100%;
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: transparent;
@@ -60,7 +61,7 @@ body > *{
   margin: 6rem auto;
   padding: 4rem 3rem;
   border-radius: 50px 0 50px 0;
-  background: linear-gradient(135deg, #1133495e, #4687b35e);
+  background: linear-gradient(135deg, #1a2a2e, var(--charcoal));
   position: relative;
   overflow: hidden;
   border: 1.5px solid #939ca07a;
